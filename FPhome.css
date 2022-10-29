@@ -9,5 +9,19 @@ h1 {
     font-family: 'Times New Roman', Times, serif;
     font-weight: 100;
     font-size: 100px;
+    background-color: white;
 
+}
+
+ul.horizontal-list li {
+    // rest of the styles from above
+    min-width: 12rem;
+    text-align: center;
+}
+
+img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
