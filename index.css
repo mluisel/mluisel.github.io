@@ -6,32 +6,52 @@
 
 body {
     background-color: rgb(255, 255, 255);
-    font-weight: 10px;
+    font-weight: 100px;
 }
 
+a {
+    color: rgb(80, 82, 82);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(35, 43, 40);
+    transition: 0.05s;
+    font-weight: bold;
+}
+
+.link {
+    text-decoration: none;
+}
 
 h1 {
-    color: rgb(234, 239, 239);
-    font-style: italic;
-    text-align: left;
+    color: rgb(234, 247, 242);
+    display: inline;
+    text-align: center;
     padding: 25px;
     margin-bottom: 50px;
-    font-family: 'Bookman, URW Bookman L, serif';
-    font-weight: 100;
-    font-size: 38px;
+    font-family: 'inherit';
+    font-weight: 1;
+    letter-spacing: 0.15em;
+    font-size: 72px;
     background-color: rgb(35, 43, 40);
 
 }
+
+
 
 .horizontal-list li {
     margin-right: 20px;
     padding-right: 20px;
     text-align: center;
+
 }
+
+
 
 li {
     display: inline;
-    margin-top: 50px;
+    letter-spacing: 0.05cm;
     font-size: 24px;
     color: rgb(80, 84, 82);
     min-width: 12px;
@@ -41,6 +61,7 @@ li {
 
 .horizontal-list {
     text-align: center;
+    margin-top: 84px;
 }
 
 .horizontal-list:hover {
@@ -91,7 +112,8 @@ img {
 .social-icons {
     color: rgb(80, 84, 82);
     text-decoration: none;
-
+    font-size: 30px;
+    text-align: left;
 
 }
 
@@ -99,6 +121,8 @@ img {
     color: black;
     transition: 0.2s;
 }
+
+
 
 
 @media screen and (min-width:320px) and (max-width: 768px) {
@@ -110,6 +134,127 @@ img {
 @media screen and (min-width:320px) and (max-width: 480px) and (min-width:769px) and (max-width: 1024px) and (min-width:1025px) and (max-width: 1200px) {
     body {
         display: flex;
+
+    }
+}
+
+.about-P {
+    font-size: 16px;
+    word-spacing: 0.05cm;
+    text-indent: 20px;
+    width: 150%;
+    text-align: center;
+    font-style: inherit;
+    color: rgb(80, 82, 82);
+    size: 24px;
+    display: inline;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+}
+
+.about-p2 {
+    font-size: 16px;
+    word-spacing: 00.05cm;
+    text-align: center;
+    font-style: inherit;
+    color: rgb(80, 82, 82);
+    display: inline;
+    text-indent: 0.25cm;
+    flex-wrap: wrap;
+    word-wrap: break-word
+}
+
+
+
+.footer {
+    display: inline-grid;
+    text-align: right;
+    font-size: 12;
+}
+
+
+.footer-a {
+    display: inline;
+    text-align: right;
+    font-size: 12
+}
+
+.head {
+    size: center;
+}
+
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+.about-list {
+    margin-right: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+/* CONTACT BOX */
+* {
+    box-sizing: border-box;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: rgb(35, 43, 40);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(35, 43, 40);
+    ;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    font-family: inherit;
+}
+
+.column {
+    font-family: inherit;
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+        font-family: inherit;
 
     }
 }
