@@ -1,4 +1,4 @@
-// alert("We are not eating you cookies here #NotBeingFollowed")
+alert("Welcome!")
 console.log("Hello world")
 
 
